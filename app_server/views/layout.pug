@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width,initial-scale=1.0')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/all.min.css')
+    title= title
+    link(rel='stylesheet', href='/stylesheets/styles.css')
+  body
+    block content
+    block scripts
+        script(src='./build/main.js')
+        script(src='./build/polyfills.js')
+        script(src='./build/runtime.js')
+        script(src='./build/styles.css')
+        script(src='./build/vendor.js')
+        
+    
